@@ -1,0 +1,33 @@
+#blog {
+    .card {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+
+        .card-link {
+            color: #edb059;
+            background: transparent;
+
+        }
+
+        .card-body {
+            font-size: 1em;
+
+            .card-title {
+
+                color: #edb059;
+
+                a {
+                    color: #edb059;
+                }
+
+            }
+        }
+
+        .card-footer {
+            background: transparent;
+            border: none;
+        }
+
+    }
+}

@@ -1,0 +1,28 @@
+.triangular-section {
+    background: url(../assets/img/start-up-bg.jpg) no-repeat;
+    height: 200px;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &::before {
+        right: 50%;
+        border-right: 82px solid transparent;
+        border-left: 1000px solid;
+        background: #000;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+
+
+    }
+}

@@ -1,0 +1,21 @@
+// Core variables and mixins
+
+
+body {
+    overflow-x: hidden;
+
+}
+
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navigation.scss";
+@import "image-gallery.scss";
+@import "triangular.scss";
+@import "carousel.scss";
+@import "blog.scss";
+@import "main.scss";
+@import "about.scss";
+@import "footer.scss";

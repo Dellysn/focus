@@ -1,0 +1,15 @@
+#main-footer {
+    height: 450px;
+    background: #000;
+    width: 100%;
+    position: fixed;
+    // bottom: 0;
+    top: 100%;
+    z-index: -99;
+
+    img {
+        width: 50%;
+        height: 50%;
+        margin-top: 4rem;
+    }
+}
