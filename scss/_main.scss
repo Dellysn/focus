@@ -1,39 +1,72 @@
-.main {
-    background: url(../assets/img/banner.jpg) no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    height: auto;
+section.banner {
+    height: 100vh;
     width: 100%;
+    background-image: url(../assets/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 
     .card {
-        background: rgba(0, 0, 0, 0);
-        border: none;
-        margin-top: 3rem;
+        background: transparent;
+        width: 100%;
         color: #fff;
+        border: none;
+        margin-top: 9rem;
         padding-top: 5rem;
+
+        p {
+            @media all and (max-width:425px) {
+                font-size: .8em
+            }
+        }
 
         h1 {
             font-size: 4em;
-        }
 
-        .card-body {
-            border: none;
-            font-weight: 700;
-        }
 
-        .card-footer {
-            background: transparent;
-            border: none;
-            color: #fff;
-
-            i {
+            @media all and (max-width:425px) {
                 font-size: 2em;
-                background: transparent;
-                margin-top: 4rem;
-                padding: 1.2rem;
-                border: 2px #fff solid;
-                border-radius: 50%;
             }
         }
+
+        .arrow-down {
+            padding-top: 2rem;
+
+            @media all and (max-width:425px) {
+                padding-top: 1rem;
+            }
+
+            i {
+                border: solid #fff 2px;
+                padding: 1.2rem;
+                border-radius: 50%;
+                transition: all .2s ease-in;
+
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    transform: translateY(2px);
+
+                }
+            }
+
+        }
+
+    }
+
+
+
+    @media all and (max-width:768px) {
+        background-size: cover;
+        height: 100vh;
+
+
+
     }
 }

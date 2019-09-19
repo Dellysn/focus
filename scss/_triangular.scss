@@ -1,18 +1,15 @@
-.triangular-section {
+section.triangular-section {
     background: url(../assets/img/start-up-bg.jpg) no-repeat;
-    height: 200px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-size: 100%;
     background-position: center;
-    background-attachment: fixed;
-    margin-top: 3rem;
+    background-attachment: scroll;
+    margin-top: 2rem;
     margin-bottom: 3rem;
+    width: 100%;
 
-    &::before {
-        right: 50%;
-        border-right: 82px solid transparent;
-        border-left: 1000px solid;
-        background: #000;
-    }
+
 
     .container {
         width: 100%;

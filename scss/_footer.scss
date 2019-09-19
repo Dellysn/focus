@@ -1,15 +1,27 @@
-#main-footer {
-    height: 450px;
-    background: #000;
-    width: 100%;
-    position: fixed;
-    // bottom: 0;
-    top: 100%;
-    z-index: -99;
+footer.sticky {
 
-    img {
-        width: 50%;
-        height: 50%;
-        margin-top: 4rem;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-content {
+        .row {
+            .card {
+                background: transparent;
+                color: #fff;
+                border: none;
+                margin-bottom: 1.5rem;
+            }
+        }
     }
+
+
+
+
+
 }

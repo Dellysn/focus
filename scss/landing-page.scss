@@ -6,12 +6,20 @@ body {
 
 }
 
+.heading-1 {
+    @media all and (max-width:425px) {
+        font-size: 1.5em;
+    }
+}
+
 @import "variables.scss";
 @import "mixins.scss";
 // Global CSS
 @import "global.scss";
 // Components
 @import "navigation.scss";
+@import "project.scss";
+@import "partners.scss";
 @import "image-gallery.scss";
 @import "triangular.scss";
 @import "carousel.scss";
