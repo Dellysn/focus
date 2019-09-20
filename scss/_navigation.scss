@@ -64,6 +64,8 @@ header {
     }
 
     nav {
+
+
         .navbar-brand {
             display: none;
 
@@ -81,9 +83,32 @@ header {
         }
 
         .navbar-nav {
+
             justify-content: center;
             align-items: center;
             width: 100%;
+
+            .nav-item {
+
+
+                .nav-link {
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 4px;
+                        background: var(--primary);
+                    }
+
+                    &:hover::after {
+                        transition: var(--transition-hover);
+
+                        width: 100%;
+                    }
+                }
+            }
+
         }
     }
 }

@@ -1,4 +1,31 @@
-#blog {
+.aside {
+    position: relative;
+
+    .two-dot {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        right: 5%;
+        z-index: 99;
+
+
+        a {
+            color: rgba(51, 51, 51, 0.692);
+            transition: var(--transiton-hover);
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+
+            &:active {
+                color: var(--primary);
+                transform: translateY(2px);
+            }
+        }
+
+    }
+
     .card {
         border-right: none;
         border-left: none;

@@ -139,6 +139,20 @@ header nav .navbar-nav {
   width: 100%;
 }
 
+header nav .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: var(--primary);
+}
+
+header nav .navbar-nav .nav-item .nav-link:hover::after {
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  width: 100%;
+}
+
 section.cta {
   width: 100%;
   background-color: #095ecc;
@@ -249,6 +263,7 @@ section.triangular-section {
   margin-top: 2rem;
   margin-bottom: 3rem;
   width: 100%;
+  position: relative;
 }
 
 section.triangular-section .container {
@@ -390,30 +405,65 @@ section.triangular-section .container {
   align-items: center;
 }
 
-#blog .card {
+.aside {
+  position: relative;
+}
+
+.aside .two-dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  z-index: 99;
+}
+
+.aside .two-dot a {
+  color: rgba(51, 51, 51, 0.692);
+  -webkit-transition: var(--transiton-hover);
+  transition: var(--transiton-hover);
+}
+
+.aside .two-dot a:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.aside .two-dot a:active {
+  color: var(--primary);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.aside .card {
   border-right: none;
   border-left: none;
   border-top: none;
 }
 
-#blog .card .card-link {
+.aside .card .card-link {
   color: #edb059;
   background: transparent;
 }
 
-#blog .card .card-body {
+.aside .card .card-body {
   font-size: 1em;
 }
 
-#blog .card .card-body .card-title {
+.aside .card .card-body .card-title {
   color: #edb059;
 }
 
-#blog .card .card-body .card-title a {
+.aside .card .card-body .card-title a {
   color: #edb059;
 }
 
-#blog .card .card-footer {
+.aside .card .card-footer {
   background: transparent;
   border: none;
 }
