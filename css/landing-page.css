@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -16,6 +20,7 @@ body {
 
 :root {
   --primary: #edb059;
+  --transition-hover: all .2s ease-out;
 }
 
 body {
@@ -167,6 +172,12 @@ section.projects .container .row {
   margin-bottom: 2rem;
   width: 100%;
   height: 50%;
+}
+
+@media all and (max-width: 425px) {
+  section.projects .container .row .img-fluid {
+    margin-bottom: 2rem;
+  }
 }
 
 section.partners {
@@ -452,6 +463,10 @@ section.banner .card .arrow-down {
   }
 }
 
+section.banner .card .arrow-down a {
+  color: #fff;
+}
+
 section.banner .card .arrow-down i {
   border: solid #fff 2px;
   padding: 1.2rem;
@@ -482,9 +497,76 @@ section.banner .card .arrow-down i:active {
 footer.sticky {
   height: auto;
   padding-top: 3rem;
-  padding-bottom: 3rem;
-  width: 100%;
   background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+footer.sticky .footer-content .row .card {
+  background: transparent;
+  color: #fff;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+footer.sticky .footer-content .row .card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer.sticky .footer-content .row .card .card-footer i {
+  margin-left: 1rem;
+}
+
+footer.sticky .footer-content .row .card .card-footer i:hover {
+  color: var(--primary);
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+}
+
+footer.sticky .footer-content .row .card .card-body .list-group .list-group-item {
+  background: transparent;
+  border: none;
+  padding: .3rem;
+}
+
+footer.sticky .footer-content .row .card .card-body .list-group .list-group-item a {
+  color: #fff;
+}
+
+footer.sticky .footer-content .row .card .card-body .list-group .list-group-item a:hover {
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  color: var(--primary);
+}
+
+footer.sticky .foot-note {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding-right: 2rem;
+  padding-left: 4rem;
+}
+
+footer.sticky .top {
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,11 +576,12 @@ footer.sticky {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+  position: fixed;
 }
 
-footer.sticky .footer-content .row .card {
-  background: transparent;
+footer.sticky .top i {
   color: #fff;
-  border: none;
-  margin-bottom: 1.5rem;
 }
