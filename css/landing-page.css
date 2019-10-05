@@ -701,6 +701,13 @@ footer.sticky .top i {
   justify-content: space-between;
 }
 
+@media all and (max-width: 480px) {
+  .popup__content {
+    width: 90%;
+    background-color: red;
+  }
+}
+
 .popup .card {
   border: none;
 }
