@@ -2,7 +2,7 @@ footer.sticky {
 
     height: auto;
     padding-top: 3rem;
-    background-color: #000;
+    background-color: var(--dark);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -62,7 +62,7 @@ footer.sticky {
 
     .foot-note {
         width: 100%;
-        background: #333;
+        background: var(--deep-grey);
         color: #fff;
         padding-right: 2rem;
         padding-left: 4rem;
@@ -71,8 +71,8 @@ footer.sticky {
 
 
     .top {
-        background: #333;
-        border: 2px solid #333;
+        background: var(--deep-grey);
+        border: 2px solid var(--deep-grey);
         border-radius: 50%;
         height: 40px;
         width: 40px;

@@ -32,7 +32,7 @@
         border-top: none;
 
         .card-link {
-            color: #edb059;
+            color: var(--primary);
             background: transparent;
 
         }
@@ -42,10 +42,10 @@
 
             .card-title {
 
-                color: #edb059;
+                color: var(--primary);
 
                 a {
-                    color: #edb059;
+                    color: var(--primary);
                 }
 
             }
