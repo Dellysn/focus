@@ -1,0 +1,12 @@
+ .btn-primary {
+     border-radius: 0;
+     background-color: var(--primary);
+     border: none;
+
+     &:hover,
+     &:active {
+         background-color: var(--dark);
+         border: none;
+         outline: none;
+     }
+ }

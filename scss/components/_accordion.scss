@@ -1,0 +1,17 @@
+.accordion {
+    .card {
+        border: var(--primary) 1px solid;
+
+        .card-header {
+            background: var(--primary);
+
+            h5 {
+                button {
+                    color: #fff;
+                }
+
+            }
+        }
+
+    }
+}

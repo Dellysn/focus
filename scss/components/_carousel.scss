@@ -1,6 +1,6 @@
 .carousel-section {
   height: 100vh;
-  background: #22262e;
+  background: var(--LightSlateGrey);
   width: 100%;
   color: #fff;
 
@@ -82,7 +82,7 @@
   }
 
   #partners {
-    background: rgb(38, 128, 231);
+    background: var(--blue);
     height: 200px;
     width: 100%;
 
